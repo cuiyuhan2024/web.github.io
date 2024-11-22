@@ -33,7 +33,7 @@ function updateScreenInfo() {
 updateScreenInfo();
 
 // 监听窗口大小改变事件，实时更新屏幕信息
-window.addEventListener('resize', updateScreenInfo);
+//window.addEventListener('resize', updateScreenInfo);
 
 // 每秒更新屏幕信息，确保即使没有触发 resize 事件也能定期更新
 setInterval(updateScreenInfo, 1000);
