@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>崔0520三班GoogleChrome</title>
+  <title>崔0520三班Google</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="clock.js" defer></script> <!-- 引入时钟功能的 JavaScript 文件 -->
+  <script src="screenInfo.js" defer></script> <!-- 引入屏幕信息的 JavaScript 文件 -->
+  <script src="mouseEvent.js" defer></script> <!-- 引入鼠标坐标的 JavaScript 文件 -->
+  <script src="lastModified.js" defer></script>
 </head>
 <body>
   <div class="tech-dept ">
@@ -26,5 +31,16 @@
     <div class="employee-card ">周八 - 招聘专员 - 评分：4.5</div>
     <div class="employee-card high-rating ">吴九 - 人事经理 - 评分：4.6</div>
   </div>
+	<!-- 时钟显示 -->
+  <div id="clock" style="font-size: 2rem; margin-top: 20px;">时钟加载中...</div>
+  
+  <!-- 屏幕信息显示 -->
+  <div id="screen-info" style="font-size: 1rem; margin-top: 20px;">屏幕信息加载中...</div>
+  
+  <!-- 鼠标按下坐标显示 -->
+  <div id="mouse-coordinates" style="font-size: 1rem; margin-top: 20px;">鼠标坐标加载中...</div>
+  
+  <!-- 显示网页最后修改时间 -->
+  <div id="last-modified" style="font-size: 1rem; margin-top: 20px;">网页最后修改时间加载中...</div>
 </body>
 </html>
